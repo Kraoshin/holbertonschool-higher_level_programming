@@ -1,4 +1,7 @@
 #!/usr/bin/python3
-for i in range(0, 9):
-    for j in range(i + 1, 10):
-        print(f"{i}{j}", end="\n" if i == 8 and j == 9 else ", ")
+for number in range(10):
+    for j in range(number + 1, 10):
+        if number < 8 or (number == 8 and j < 9):
+            print("{:02d}".format(number * 10 + j), end=", ")
+        else:
+            print("{:02d}".format(number * 10 + j))
