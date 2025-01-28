@@ -7,11 +7,14 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """
-        Initializes the rectangle with private instance attributes width and height.
+        Initializes the rectangle with private instance attributes
+        width and height.
 
         Args:
-            width (int): The width of the rectangle. Defaults to 0.
-            height (int): The height of the rectangle. Defaults to 0.
+            width (int): The width of the rectangle.
+            Defaults to 0.
+            height (int): The height of the rectangle.
+            Defaults to 0.
 
         Raises:
             TypeError: If width or height is not an integer.
@@ -80,7 +83,8 @@ class Rectangle:
         Returns the current rectangle perimeter.
 
         Returns:
-            int: The perimeter of the rectangle, or 0 if width or height is 0.
+            int: The perimeter of the rectangle,
+            or 0 if width or height is 0.
         """
         if self.__width == 0 or self.__height == 0:
             return 0

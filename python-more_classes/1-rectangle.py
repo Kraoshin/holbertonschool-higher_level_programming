@@ -1,20 +1,17 @@
 #!/usr/bin/python3
 """Defines a class Rectangle"""
 
+
 class Rectangle:
     """Represents a rectangle"""
 
     def __init__(self, width=0, height=0):
         """
-        Initializes the rectangle with private instance attributes width and height.
+        Initializes the Rectangle with optional width and height.
 
         Args:
-            width (int): The width of the rectangle. Defaults to 0.
-            height (int): The height of the rectangle. Defaults to 0.
-
-        Raises:
-            TypeError: If width or height is not an integer.
-            ValueError: If width or height is less than 0.
+            width (int): The width of the rectangle. Default is 0.
+            height (int): The height of the rectangle. Default is 0.
         """
         self.width = width
         self.height = height
@@ -23,7 +20,7 @@ class Rectangle:
     def width(self):
         """Retrieves the width of the rectangle"""
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         """
@@ -41,7 +38,7 @@ class Rectangle:
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
-    
+
     @property
     def height(self):
         """Retrieves the height of the rectangle."""
