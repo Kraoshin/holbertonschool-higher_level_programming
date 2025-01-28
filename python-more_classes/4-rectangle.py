@@ -7,7 +7,8 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """
-        Initializes the rectangle with private instance attributes width and height.
+        Initializes the rectangle with private instance attributes
+        width and height.
 
         Args:
             width (int): The width of the rectangle. Defaults to 0.
@@ -105,7 +106,8 @@ class Rectangle:
 
     def __repr__(self):
         """
-        Returns a string representation of the rectangle to recreate a new instance using eval().
+        Returns a string representation of the rectangle to
+        recreate a new instance using eval().
 
         Returns:
             str: The string representation of the rectangle.

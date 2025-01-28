@@ -10,7 +10,8 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """
-        Initializes the rectangle with private instance attributes width and height.
+        Initializes the rectangle with private instance
+        attributes width and height.
 
         Args:
             width (int): The width of the rectangle. Defaults to 0.
@@ -109,7 +110,8 @@ class Rectangle:
 
     def __repr__(self):
         """
-        Returns a string representation of the rectangle to recreate a new instance using eval().
+        Returns a string representation of the rectangle to
+        recreate a new instance using eval().
 
         Returns:
             str: The string representation of the rectangle.
@@ -134,7 +136,8 @@ class Rectangle:
             TypeError: If rect_1 or rect_2 is not an instance of Rectangle.
 
         Returns:
-            Rectangle: The rectangle with the bigger area, or rect_1 if both have the same area.
+            Rectangle: The rectangle with the bigger area, or rect_1 if
+            both have the same area.
         """
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")

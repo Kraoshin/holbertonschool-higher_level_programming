@@ -10,7 +10,8 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """
-        Initializes the rectangle with private instance attributes width and height.
+        Initializes the rectangle with private instance
+        attributes width and height.
 
         Args:
             width (int): The width of the rectangle. Defaults to 0.
@@ -84,7 +85,8 @@ class Rectangle:
         Returns the current rectangle perimeter.
 
         Returns:
-            int: The perimeter of the rectangle, or 0 if width or height is 0.
+            int: The perimeter of the rectangle, or 0
+            if width or height is 0.
         """
         if self.__width == 0 or self.__height == 0:
             return 0
@@ -109,7 +111,8 @@ class Rectangle:
 
     def __repr__(self):
         """
-        Returns a string representation of the rectangle to recreate a new instance using eval().
+        Returns a string representation of the rectangle to
+        recreate a new instance using eval().
 
         Returns:
             str: The string representation of the rectangle.
@@ -134,7 +137,8 @@ class Rectangle:
             TypeError: If rect_1 or rect_2 is not an instance of Rectangle.
 
         Returns:
-            Rectangle: The rectangle with the bigger area, or rect_1 if both have the same area.
+            Rectangle: The rectangle with the bigger area, or rect_1
+            if both have the same area.
         """
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
@@ -153,6 +157,7 @@ class Rectangle:
             size (int): The size of the square. Defaults to 0.
 
         Returns:
-            Rectangle: A new Rectangle instance with width and height equal to size.
+            Rectangle: A new Rectangle instance with
+            width and height equal to size.
         """
         return cls(size, size)

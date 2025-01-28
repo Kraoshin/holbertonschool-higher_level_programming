@@ -7,7 +7,8 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """
-        Initializes the rectangle with private instance attributes width and height.
+        Initializes the rectangle with private instance attributes
+        width and height.
 
         Args:
             width (int): The width of the rectangle. Defaults to 0.
