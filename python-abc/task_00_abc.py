@@ -25,7 +25,7 @@ class Dog(Animal):
         """
         This method returns the sound of a dog.
         """
-        return "Woof"
+        return "Bark"
 
 
 class Cat(Animal):
