@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
 This module defines an abstract class Animal and two subclasses Dog and Cat.
 """
