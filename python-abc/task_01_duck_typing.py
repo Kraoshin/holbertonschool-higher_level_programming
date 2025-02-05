@@ -2,7 +2,6 @@
 """
 This module defines an abstract base class for shapes using duck typing.
 """
-
 from abc import ABC, abstractmethod
 import math
 
@@ -95,7 +94,7 @@ class Circle(Shape):
         Args:
             radius (int): The radius of the circle.
         """
-        self.radius = radius
+        self.radius = abs(radius)
 
     def area(self):
         """
@@ -122,6 +121,6 @@ def shape_info(shape):
     """
     area = shape.area()
     perimeter = shape.perimeter()
-    print(f"Area: {shape.area()}")
-    print(f"Perimeter: {shape.perimeter()}")
+    print("Area: {}".format(shape.area()))
+    print("Perimeter: {}".format(shape.perimeter()))
     return area, perimeter
