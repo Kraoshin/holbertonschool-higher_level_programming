@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""script that changes the nameof a State object from the database
+"""script that changes the name of a State object from the database
 hbtn_0e_6_usa"""
 
 import sys
@@ -19,7 +19,7 @@ if __name__ == "__main__":
                            .format(username, password, database))
 
     Session = sessionmaker(bind=engine)
-    
+
     session = Session()
 
     state = session.query(State).filter(State.id == state_id).first()
